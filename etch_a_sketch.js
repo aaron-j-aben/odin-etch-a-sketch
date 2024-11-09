@@ -7,7 +7,6 @@
  */
 
 const grid = document.querySelector('.grid');
-const grid_px = grid.style.width;
 
 genGrid(grid, 16);
 

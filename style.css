@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
-    width: 1000px;
-    height: 1000px;
+    width: 70vh;
+    height: 70vh;
 }
 
 .square { 

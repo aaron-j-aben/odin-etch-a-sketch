@@ -53,7 +53,7 @@ function genRow(n) {
  */
 function genGrid(canvas, n) {
     for (let i = 0; i < n; i++) {
-        canvas.appendChild(rowOfSquares(n));
+        canvas.appendChild(genRow(n));
     }
 
     return canvas;

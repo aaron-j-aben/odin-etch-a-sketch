@@ -16,7 +16,7 @@ resizeBtn.addEventListener('click', () => {
     newSize = parseInt(newSize.trim());
     if (newSize) {
         deleteGrid(grid);
-        genGrid(newSize);
+        genGrid(grid, newSize);
     }
 });
 

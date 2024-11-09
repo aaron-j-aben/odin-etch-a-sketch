@@ -18,7 +18,7 @@
     background-color: antiquewhite;
     height: 100%;
 
-    transition: 0.2s ease-in-out;
+    transition: 0.025s ease-in-out;
 }
 
 .square.hover {

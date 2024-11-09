@@ -21,6 +21,7 @@ function genSquare(n) {
     square.style.flex = '1 1 0';
     square.style.backgroundColor = 'antiquewhite';
     square.style.height = '100%';
+    square.classList.add('square');
 
     return square;
 }

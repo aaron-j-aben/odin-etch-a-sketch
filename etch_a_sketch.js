@@ -15,6 +15,8 @@ const grid_px = grid.style.width;
  * Generates a single square div based on the grid dimensions and the number of
  * squares required
  * @param {number} n 
+ * 
+ * @returns {object} square
  */
 function genSquare(n) {
     const square = document.createElement('div');
@@ -26,6 +28,8 @@ function genSquare(n) {
 /**
  * Generates a row of n squares
  * @param {number} n 
+ * 
+ * @returns {object} rowOfSquares
  */
 function genRow(n) {
     const rowOfSquares = document.createElement('div');
@@ -42,6 +46,8 @@ function genRow(n) {
  * Generate a grid of n quadrilaterals in element canvas
  * @param {object} canvas 
  * @param {number} n 
+ * 
+ * @returns {object} canvas
  */
 function genGrid(canvas, n) {
     for (let i = 0; i < n; i++) {

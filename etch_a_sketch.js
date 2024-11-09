@@ -17,7 +17,7 @@ const grid_px = grid.style.width;
  * @param {number} n 
  */
 function genSquare(n) {
-
+    const squareWidth = grid_px / n;
 }
 
 function genRow(n) {

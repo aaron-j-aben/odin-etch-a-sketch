@@ -15,6 +15,14 @@ resizeBtn.addEventListener('click', () => {
     let newSize = prompt('How many squares do you want per side?');
     newSize = parseInt(newSize.trim());
     if (newSize) {
+        if (newSize < 0) {
+            alert("Please input a positive integer");
+            return;
+        } else if (newSize > 100) {
+            alert("The size limit is 100 squares per side");
+            return;
+        }
+
         deleteGrid(grid);
         genGrid(grid, newSize);
     }

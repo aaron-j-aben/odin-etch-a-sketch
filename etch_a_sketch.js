@@ -7,7 +7,7 @@
  */
 
 const grid = document.querySelector('.grid');
-const grid_px = grid.width;
+const grid_px = grid.style.width;
 
 // Represent grid as column flexbox of row flexboxes
 

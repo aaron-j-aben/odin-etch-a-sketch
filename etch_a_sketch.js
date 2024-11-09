@@ -44,5 +44,9 @@ function genRow(n) {
  * @param {number} n 
  */
 function genGrid(canvas, n) {
+    for (let i = 0; i < n; i++) {
+        canvas.appendChild(rowOfSquares(n));
+    }
 
+    return canvas;
 }

@@ -65,6 +65,17 @@ function genGrid(canvas, n) {
 }
 
 /**
+ * Removes all squares from the the grid specified by canvas
+ * 
+ * @param {object} canvas 
+ */
+function deleteGrid(canvas) {
+    for (const row of canvas.children) {
+        canvas.removeChild(row);
+    }
+}
+
+/**
  * Makes all squares return to their starting color
  * @param {object} canvas 
  */

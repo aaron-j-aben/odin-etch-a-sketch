@@ -63,3 +63,10 @@ function genGrid(canvas, n) {
 
     return canvas;
 }
+
+/**
+ * Makes all squares return to their starting color
+ * @param {object} canvas 
+ */
+function clearCanvas(canvas){
+}

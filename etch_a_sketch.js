@@ -18,14 +18,22 @@ const grid_px = grid.style.width;
  */
 function genSquare(n) {
     const square = document.createElement('div');
-    square.style.flex = '1 1 auto';
+    square.style.flex = '1 1 0';
     square.style.backgroundColor = 'antiquewhite';
 
     return square;
 }
 
+/**
+ * Generates a row of n squares
+ * @param {number} n 
+ */
 function genRow(n) {
+    const rowOfSquares = document.createElement('div');
+    rowOfSquares.style.display = 'flex';
+    rowOfSquares.style.flex = '1 1 0';
 
+    return rowOfSquares;
 }
 
 function genGrid(n) {

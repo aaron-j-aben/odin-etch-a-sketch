@@ -11,3 +11,9 @@
     width: 1000px;
     height: 1000px;
 }
+
+.square { 
+    flex: 1 1 0;
+    background-color: antiquewhite;
+    height: 100%;
+}

@@ -18,9 +18,6 @@ const grid_px = grid.style.width;
  */
 function genSquare(n) {
     const square = document.createElement('div');
-    square.style.flex = '1 1 0';
-    square.style.backgroundColor = 'antiquewhite';
-    square.style.height = '100%';
     square.classList.add('square');
 
     return square;

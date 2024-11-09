@@ -29,8 +29,7 @@ function genSquare(n) {
  */
 function genRow(n) {
     const rowOfSquares = document.createElement('div');
-    rowOfSquares.style.display = 'flex';
-    rowOfSquares.style.flex = '1 1 0';
+    rowOfSquares.classList.add('rowOfSquares');
 
     for (let i = 0; i < n; i++) {
         rowOfSquares.appendChild(genSquare(n));

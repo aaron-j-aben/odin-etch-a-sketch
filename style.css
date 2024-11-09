@@ -17,3 +17,8 @@
     background-color: antiquewhite;
     height: 100%;
 }
+
+.rowOfSquares {
+    display: flex;
+    flex: 1 1 0;
+}

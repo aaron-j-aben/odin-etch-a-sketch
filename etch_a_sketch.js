@@ -37,6 +37,11 @@ function genRow(n) {
     return rowOfSquares;
 }
 
-function genGrid(n) {
+/**
+ * Generate a grid of n quadrilaterals in element canvas
+ * @param {object} canvas 
+ * @param {number} n 
+ */
+function genGrid(canvas, n) {
 
 }

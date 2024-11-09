@@ -6,7 +6,8 @@
  * when hovered on.
  */
 
-const GRID_PX = 1000;
+const grid = document.querySelector('.grid');
+const grid_px = grid.width;
 
 // Represent grid as column flexbox of row flexboxes
 

@@ -34,6 +34,10 @@ function genRow(n) {
     rowOfSquares.style.display = 'flex';
     rowOfSquares.style.flex = '1 1 0';
 
+    for (let i = 0; i < n; i++) {
+        rowOfSquares.appendChild(genSquare(n));
+    }
+
     return rowOfSquares;
 }
 

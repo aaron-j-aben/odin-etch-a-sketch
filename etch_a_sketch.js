@@ -9,6 +9,7 @@
 const grid = document.querySelector('.grid');
 
 genGrid(grid, 16);
+deleteGrid(grid);
 
 // Represent grid as column flexbox of row flexboxes
 
@@ -70,8 +71,8 @@ function genGrid(canvas, n) {
  * @param {object} canvas 
  */
 function deleteGrid(canvas) {
-    for (const row of canvas.children) {
-        canvas.removeChild(row);
+    while (canvas.firstChild) {
+        canvas.removeChild(canvas.lastChild);
     }
 
     return canvas;

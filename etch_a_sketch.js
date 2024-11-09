@@ -20,6 +20,8 @@ function genSquare(n) {
     const square = document.createElement('div');
     square.style.flex = '1 1 auto';
     square.style.backgroundColor = 'antiquewhite';
+
+    return square;
 }
 
 function genRow(n) {

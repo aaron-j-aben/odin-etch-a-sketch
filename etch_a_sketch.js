@@ -17,7 +17,9 @@ const grid_px = grid.style.width;
  * @param {number} n 
  */
 function genSquare(n) {
-    const squareWidth = grid_px / n;
+    const square = document.createElement('div');
+    square.style.flex = '1 1 auto';
+    square.style.backgroundColor = 'antiquewhite';
 }
 
 function genRow(n) {

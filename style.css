@@ -17,6 +17,12 @@
     flex: 1 1 0;
     background-color: antiquewhite;
     height: 100%;
+
+    transition: 0.2s ease-in-out;
+}
+
+.square .hover {
+    background-color: navy;
 }
 
 .rowOfSquares {

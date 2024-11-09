@@ -7,9 +7,18 @@
  */
 
 const grid = document.querySelector('.grid');
+const resizeBtn = document.querySelector('#resize');
 
 genGrid(grid, 16);
-deleteGrid(grid);
+
+resizeBtn.addEventListener('click', () => {
+    let newSize = prompt('How many squares do you want per side?');
+    newSize = parseInt(newSize.trim());
+    if (newSize) {
+        deleteGrid(grid);
+        genGrid(newSize);
+    }
+});
 
 // Represent grid as column flexbox of row flexboxes
 

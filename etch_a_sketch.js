@@ -9,7 +9,7 @@
 const grid = document.querySelector('.grid');
 const resizeBtn = document.querySelector('#resize');
 
-genGrid(grid, 16);
+genGrid(grid);
 
 resizeBtn.addEventListener('click', () => {
     let newSize = prompt('How many squares do you want per side?');
@@ -60,7 +60,7 @@ function genRow(n) {
  * 
  * @returns {object} canvas
  */
-function genGrid(canvas, n) {
+function genGrid(canvas, n=16) {
     for (let i = 0; i < n; i++) {
         canvas.appendChild(genRow(n));
     }

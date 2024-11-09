@@ -73,6 +73,8 @@ function deleteGrid(canvas) {
     for (const row of canvas.children) {
         canvas.removeChild(row);
     }
+
+    return canvas;
 }
 
 /**

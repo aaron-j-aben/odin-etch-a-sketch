@@ -56,5 +56,11 @@ function genGrid(canvas, n) {
         canvas.appendChild(genRow(n));
     }
 
+    canvas.addEventListener('mouseover', (e) => {
+        if (e.target.classList.contains('square')) {
+            e.target.classList.add('hover');
+        }
+    });
+
     return canvas;
 }

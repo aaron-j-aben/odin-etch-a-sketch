@@ -75,7 +75,7 @@ function genGrid(canvas, n=16) {
 
     canvas.addEventListener('mouseover', (e) => {
         if (e.target.classList.contains('square')) {
-            e.target.classList.add('hover');
+            e.target.style.backgroundColor = genRgbString();
         }
     });
 

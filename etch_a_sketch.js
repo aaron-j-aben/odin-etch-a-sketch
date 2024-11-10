@@ -96,6 +96,21 @@ function deleteGrid(canvas) {
 }
 
 /**
+ * Return a string representing a randomized RGB color
+ * 
+ */
+function genRgbString() {
+    const rgbVals = new Array(3);
+
+    for (let i = 0; i < 3; i++) {
+        rgbVals[i] = Math.floor(Math.random() * 256);
+    }
+
+    const rgbString = `rgb(${rgbVals[0]}, ${rgbVals[1]}, ${rgbVals[2]})`;
+    return rgbString;
+}
+
+/**
  * Makes all squares return to their starting color
  * @param {object} canvas 
  */
